@@ -133,7 +133,9 @@ def delete_movie_record():
     mysql.connection.commit()
     cur.close()
     return redirect(url_for('home'))
-
+@app.route("/home/sel",methods=['GET','POST'])
+def select1():
+    return redirect(url_for('home'),title = "GREAT")
 
 if __name__== '__main__':
     app.run('0.0.0.0',debug = True)

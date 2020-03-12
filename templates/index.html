@@ -6,6 +6,7 @@
   body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
   .w3-third img:hover{opacity: 1}
+  
   </style>
 
 <div class="jumbotron">
@@ -60,7 +61,7 @@
   </div>
 </div>
 
-
+<hr size = "30"/>
 <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact" align = "center">
   <div class="w3-content" style="max-width:600px">
     <h4 class="w3-center"><b>Sign Up</b></h4>
@@ -87,7 +88,8 @@
         
         <label>Name</label>
         <label>Name</label>
-        <select id="Name" name = "name">
+        <select id="Name" name = "name" required>
+          <option label=" "></option>
           {%for i in account %}
           <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
   
@@ -99,6 +101,7 @@
   </div>
 </div>
 &nbsp;
+<hr size = "100">
 
 <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact" align = "center">
   <div class="w3-content" style="max-width:600px">
