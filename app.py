@@ -133,9 +133,27 @@ def delete_movie_record():
     mysql.connection.commit()
     cur.close()
     return redirect(url_for('home'))
-@app.route("/home/sel",methods=['GET','POST'])
-def select1():
-    return redirect(url_for('home'),title = "GREAT")
+
+@app.route("/home1/<id>",methods=['GET','POST'])
+
+def delete_movie_recordby_id(id):
+          
+    cur = mysql.connection.cursor()
+    id = id
+    cur.execute("Delete from MreviewTable where review_id = %s",[int(id)])
+    mysql.connection.commit()
+    cur.close()
+    return redirect(url_for('home'))
+
+@app.route("/home2/<id>",methods=['GET','POST'])
+def delete_game_recordby_id():
+    
+    cur = mysql.connection.cursor()
+    cur.execute("Delete from GreviewTable where review_id = %s",[int(id)])
+    mysql.connection.commit()
+    cur.close()
+    return redirect(url_for('home'))
 
 if __name__== '__main__':
     app.run('0.0.0.0',debug = True)
+    
