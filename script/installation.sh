@@ -1,5 +1,6 @@
 #!/bin/bash
 source venv/bin/activate
+cd venv/bin
 pip3 install flask
 pip3 install flask_mysqldb
 source  ~/.bashrc
