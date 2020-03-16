@@ -203,11 +203,13 @@
   <h2 align = "center">Game Review Table</h2>
   
   <table align="center">
+    <col width=24px>
     <col width=10%>
     <col width=20%>
     <col width=10%>
     
     <tr>
+      <th>Bin</th>
       <th>Review ID</th>
       <th>Name</th>
       <th>Game</th>
@@ -216,6 +218,8 @@
     
     {%for i in data1 %}
     <tr>
+      <th><a href= "{{ url_for('delete_game_recordby_id',id =i[0]) }}" ><img style="display:block;" width="24px" height="24px" src="https://github.com/Amran-Lab/QA-SFIA/blob/master/icons8-delete-bin-24.png?raw=true" /></a>
+      </th>
       <td>{{ i[0] }}</td>
       <td>{{ i[2] }} {{ i[4] }}</td>
       <td>{{ i[1] }}</td>

@@ -146,9 +146,10 @@ def delete_movie_recordby_id(id):
     return redirect(url_for('home'))
 
 @app.route("/home2/<id>",methods=['GET','POST'])
-def delete_game_recordby_id():
+def delete_game_recordby_id(id):
     
     cur = mysql.connection.cursor()
+    id = id
     cur.execute("Delete from GreviewTable where review_id = %s",[int(id)])
     mysql.connection.commit()
     cur.close()
