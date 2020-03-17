@@ -7,7 +7,7 @@ pipeline{
                 sh './script/before_installation.sh'
                 
                 sh './script/make_service.sh'
-                sh 'pytest testing.py'
+                
                 
                 
 
