@@ -8,8 +8,8 @@ pipeline{
                 
                 sh './script/make_service.sh'
                 
-                sh 'coverage run -m pytest testing.py'
-                sh 'coverage report -m'
+                sh '/var/lib/jenkins/workspace/pipeline1/venv/bin/coverage run -m /var/lib/jenkins/workspace/pipeline1/testing.py'
+                sh '/var/lib/jenkins/workspace/pipeline1/venv/bin/coverage report -m'
                 
                 
 
