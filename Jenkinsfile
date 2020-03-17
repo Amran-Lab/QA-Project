@@ -7,8 +7,9 @@ pipeline{
                 sh './script/before_installation.sh'
                 
                 sh './script/make_service.sh'
-                sh '/var/lib/jenkins/workspace/pipeline1/venv/bin/pytest /var/lib/jenkins/workspace/pipeline1/testing.py'
                 
+                sh 'coverage run -m pytest testing.py'
+                sh 'coverage report -m'
                 
                 
 
