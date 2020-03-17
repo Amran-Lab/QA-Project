@@ -155,6 +155,8 @@ def delete_game_recordby_id(id):
     cur.close()
     return redirect(url_for('home'))
 
+
+
 if __name__== '__main__':
     app.run('0.0.0.0',debug = True)
     
