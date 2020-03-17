@@ -3,4 +3,5 @@ sudo cp /var/lib/jenkins/workspace/pipeline1/script/flask.service /etc/systemd/s
 sudo systemctl daemon-reload
 sudo systemctl enable flask.service
 
+sudo systemctl stop flask.service
 sudo systemctl start flask.service
