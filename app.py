@@ -8,7 +8,7 @@ sqlpass = os.environ['SQLPASS']
 app.config['MYSQL_HOST'] = sqlhost
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = sqlpass
-app.config['MYSQL_DB']= 'project1'
+app.config['MYSQL_DB']= 'project'
 
 mysql = MySQL(app)
 
