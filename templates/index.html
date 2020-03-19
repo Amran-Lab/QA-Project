@@ -11,28 +11,28 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio='hh  </h1>      
-    <p>Some text that represents "Me"...</p>
+    <h1>Movie And Game Review  </h1>      
+    <p>Post Your Reviews Here</p>
   </div>
 </div>
   
 <div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
+  <h3>Some Movies and Games</h3><br>
   <div class="row">
     <div class="col-sm-3">
-      <p>Some text..</p>
+      <p>GTA</p>
       <img src="https://blog.us.playstation.com/tachyon/2017/12/Heist.jpg?resize=1088,612" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
-      <p>Some text..</p>
+      <p>Fortnite</p>
       <img src="https://images.tweaktown.com/news/5/9/59998_04_fortnites-new-xbox-one-update-4k-pcs-epic-setting.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
-      <p>Some text..</p>
+      <p>MineCraft</p>
       <img src="https://i.imgur.com/SpbiM3xg.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3">
-      <p>Some text..</p>
+      <p>Doom</p>
       <img src="https://www.100hdwallpapers.com/wallpapers/3840x2160/doom_eternal_2019_game_4k-hd_wallpapers.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
@@ -41,19 +41,19 @@
 <div class="container-fluid bg-3 text-center">    
   <div class="row">
     <div class="col-sm-3">
-      <p>Some text..</p>
+      <p>Joker</p>
       <img src="https://img.wallpapersafari.com/desktop/1920/1080/23/46/SeJHTD.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
-      <p>Some text..</p>
+      <p>Avengers Endgame</p>
       <img src="https://4.bp.blogspot.com/-eqPNLqeDI-w/XI51rOAe22I/AAAAAAAAAts/gBOCnWl70iQc6POs9ORbgAFWip5j-jogACKgBGAs/w0/avengers-endgame-movie-characters-uhdpaper.com-4K-52.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3"> 
-      <p>Some text..</p>
+      <p>Lego Movie 2</p>
       <img src="https://www.hdwallpaperslife.com/wp-content/uploads/2018/06/the_lego_movie_2_the_second_part_2019_4k.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-3">
-      <p>Some text..</p>
+      <p>Aladdin</p>
       <img src="https://2.bp.blogspot.com/-VZaSmevtIT4/XNGvxRmPTYI/AAAAAAAACO0/r18HF9Nw5ikY7W9hHPBAYfNS0uixLPBDACKgBGAs/w914-h514-p-k-no-nu/aladdin-2019-aladdin-jasmine-genie-uhdpaper.com-4K-3.jpg" class="img-responsive" style="width:100%" alt="Image">
     </div>
     
@@ -111,7 +111,7 @@
       <div class="w3-section">
         
         <label>Name</label>
-        <select id="Name" name = "name">
+        <select id="Name" name = "name" label=" ">
           {%for i in account %}
           <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
   
@@ -119,7 +119,7 @@
           
         </select>
         <label>Game</label>
-        <select id="Game" name = "game">
+        <select id="Game" name = "game" label=" ">
           {%for i in data %}
           <option value="{{ i[0] }}">{{ i[1] }}</option>
   
@@ -145,7 +145,7 @@
     <form method ="POST" action="{{ url_for('add_game_record') }}" >
       <div class="w3-section">
         <label>Name</label>
-        <select id="Name" name = "name">
+        <select id="Name" name = "name" label=" ">
           {%for i in account %}
           <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
   
@@ -154,7 +154,7 @@
         </select>
       </div>
       
-      <select id="Game" name = "game">
+      <select id="Game" name = "game" label=" ">
         {%for i in data %}
         <option value="{{ i[0] }}">{{ i[1] }}</option>
 
@@ -237,7 +237,7 @@
         <div class="w3-section">
           
           <label>Name</label>
-          <select id="Name" name = "name">
+          <select id="Name" name = "name" label=" ">
             {%for i in account %}
             <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
     
@@ -245,7 +245,7 @@
             
           </select>
           <label>Movie</label>
-          <select id="Game" name = "movie">
+          <select id="Game" name = "movie" label=" ">
             {%for i in movie %}
             <option value="{{ i[0] }}">{{ i[1] }}</option>
     
@@ -266,7 +266,7 @@
       <form method ="POST" action="{{ url_for('add_movie_record') }}" >
         <div class="w3-section">
           <label>Name</label>
-          <select id="Name" name = "name">
+          <select id="Name" name = "name" label=" ">
             {%for i in account %}
             <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
     
@@ -275,7 +275,7 @@
           </select>
         </div>
         
-        <select id="Game" name = "movie">
+        <select id="Game" name = "movie" label=" ">
           {%for i in movie %}
           <option value="{{ i[0] }}">{{ i[1] }}</option>
   
