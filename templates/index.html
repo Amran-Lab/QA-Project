@@ -111,7 +111,8 @@
       <div class="w3-section">
         
         <label>Name</label>
-        <select id="Name" name = "name" label=" ">
+        <select id="Name" name = "name">
+          <option label=" "></option>
           {%for i in account %}
           <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
   
@@ -119,7 +120,8 @@
           
         </select>
         <label>Game</label>
-        <select id="Game" name = "game" label=" ">
+        <select id="Game" name = "game">
+          <option label=" "></option>
           {%for i in data %}
           <option value="{{ i[0] }}">{{ i[1] }}</option>
   
@@ -145,7 +147,8 @@
     <form method ="POST" action="{{ url_for('add_game_record') }}" >
       <div class="w3-section">
         <label>Name</label>
-        <select id="Name" name = "name" label=" ">
+        <select id="Name" name = "name">
+          <option label=" "></option>
           {%for i in account %}
           <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
   
@@ -154,7 +157,8 @@
         </select>
       </div>
       
-      <select id="Game" name = "game" label=" ">
+      <select id="Game" name = "game">
+        <option label=" "></option>
         {%for i in data %}
         <option value="{{ i[0] }}">{{ i[1] }}</option>
 
@@ -237,7 +241,8 @@
         <div class="w3-section">
           
           <label>Name</label>
-          <select id="Name" name = "name" label=" ">
+          <select id="Name" name = "name">
+            <option label=" "></option>
             {%for i in account %}
             <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
     
@@ -245,7 +250,8 @@
             
           </select>
           <label>Movie</label>
-          <select id="Game" name = "movie" label=" ">
+          <select id="Game" name = "movie">
+            <option label=" "></option>
             {%for i in movie %}
             <option value="{{ i[0] }}">{{ i[1] }}</option>
     
@@ -266,7 +272,8 @@
       <form method ="POST" action="{{ url_for('add_movie_record') }}" >
         <div class="w3-section">
           <label>Name</label>
-          <select id="Name" name = "name" label=" ">
+          <select id="Name" name = "name">
+            <option label=" "></option>
             {%for i in account %}
             <option value="{{ i[0] }}">{{ i[1] }} {{ i[2] }}</option>
     
@@ -275,7 +282,8 @@
           </select>
         </div>
         
-        <select id="Game" name = "movie" label=" ">
+        <select id="Game" name = "movie">
+          <option label=" "></option>
           {%for i in movie %}
           <option value="{{ i[0] }}">{{ i[1] }}</option>
   
