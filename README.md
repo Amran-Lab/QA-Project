@@ -2,6 +2,15 @@
 # SFIA Project
 ## Movie and Game Reviw
 
+[Brief](#brief)
+   * [My Solution](#mysolution)
+   
+[ERD and Diagrams](#erdanddiagrams)
+[Risk Assessment]
+[Trello and Planning]
+   
+   
+
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/SFIA-Entity%20Relation%20Diagram.png?raw=true)
 
