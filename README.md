@@ -89,7 +89,7 @@ for the user stories and requirements, to make sure I am meeting them.
 
 ### Deployment
 
-
+![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Pipline.PNG?raw=true)
 
 
 
