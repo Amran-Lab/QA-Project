@@ -6,7 +6,9 @@
    * [My Solution](#mysolution)
    
 [ERD and Diagrams](#erdanddiagrams)
+
 [Risk Assessment](#RA)
+
 [Trello and Planning](#TAP)
    
    
