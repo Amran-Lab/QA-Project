@@ -10,16 +10,26 @@
 [Risk Assessment](#RA)
 
 [Trello and Planning](#TAP)
+  * [Trello Before](#Tap1)
+  * [Trello After](#Tap2)
+
+[Testing](#Testing)
+
+[Deployment](#Deploy)
+  * [Pipline](#Pipeline)
    
-   
+[Retrospective](#Retro)  
+
+<a name="brief"></a>
 
 
+<a name="erdanddiagrams"></a>
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/SFIA-Entity%20Relation%20Diagram.png?raw=true)
 
 
 
 
-
+<a name="RA"></a>
 
 | Risk Assessment                                 | Risk Factor | Mitigating                                        | New Risk Factor |
 |-------------------------------------------------|-------------|---------------------------------------------------|-----------------|
@@ -40,10 +50,29 @@
 \
 \
 \
+<a name="TAP"></a>
+<a name="TAP1"></a>
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello1.PNG?raw=true)
 \
 \
 \
 \
 \
+<a name="TAP2"></a>
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello2.PNG?raw=true)
+
+\
+\
+\
+\
+\
+<a name="Deploy"></a>
+<a name="Pipeline"></a>
+\
+\
+\
+
+\
+
+\
+<a name="Retrospective"></a>
