@@ -39,6 +39,8 @@ I have created 4 tables excluding the user table. The four tables are paired up 
 
 <a name="RA"></a>
 
+### Risk Assessment
+
 | Risk Assessment                                 | Risk Factor | Mitigating                                        | New Risk Factor |
 |-------------------------------------------------|-------------|---------------------------------------------------|-----------------|
 | Corrupted Files                                 | 8/10        | Online Version Control                            | 3/10            |
@@ -58,8 +60,13 @@ I have created 4 tables excluding the user table. The four tables are paired up 
 \
 \
 \
+
+
+
 <a name="TAP"></a>
 <a name="TAP1"></a>
+
+### Trello and Planning
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello1.PNG?raw=true)
 \
@@ -75,17 +82,20 @@ I have created 4 tables excluding the user table. The four tables are paired up 
 
 For my planning I used Trello. I have moved over tasks when completed to done or when something is ongoing such as the readme it is in the doing now tab.
 
-\
+
+
 <a name="Deploy"></a>
 <a name="Pipeline"></a>
-\
+
+### Deployment
 
 \
 
 \
 
-\
 <a name="Retrospective"></a>
+
+### Retrospective
 
 I have created a flask application and deployed it onto a virtual machine with jenkins,
 using Agile methodology. The application can connect to a gcp database and read write to it.
