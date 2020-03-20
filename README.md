@@ -22,8 +22,8 @@
 
 <a name="brief"></a>
 
-
 <a name="erdanddiagrams"></a>
+
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/SFIA-Entity%20Relation%20Diagram.png?raw=true)
 
 
