@@ -1,6 +1,8 @@
-from flask import Flask,render_template,request,redirect, url_for
+from flask import Flask,render_template,request,redirect, url_for, session
 from flask_mysqldb import MySQL
 import os 
+
+
 
 app = Flask(__name__)
 sqlhost = os.environ['SQLHOST']
@@ -12,7 +14,7 @@ app.config['MYSQL_DB']= 'project'
 
 mysql = MySQL(app)
 
-
+app.secret_key = "super secret key"
 @app.route('/',methods=['GET','POST'])
 def home():
     
@@ -47,7 +49,21 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    cur = mysql.connection.cursor()
+
+    cur.execute("SELECT * from accountTable")
+    account = cur.fetchall()
+    cur.close
+    try:
+        MrevTable = request.args['MrevTable']  # counterpart for url_for()
+        MrevTable = session['MrevTable']
+        GrevTable = request.args['GrevTable']  # counterpart for url_for()
+        GrevTable = session['GrevTable']
+    except:
+        MrevTable=[]
+        GrevTable = [] # counterpart for url_for()
+        
+    return render_template("about.html", account = account, MrevTable = MrevTable, GrevTable=GrevTable)
 @app.route("/home/add/game",methods=['GET','POST'])
 def add_game_record():
     details=request.form
@@ -154,6 +170,21 @@ def delete_game_recordby_id(id):
     mysql.connection.commit()
     cur.close()
     return redirect(url_for('home'))
+@app.route("/about/display/mrev",methods=['GET','POST'])
+def display_by_name():
+    details=request.form
+    user_id_1= details['name']
+    cur = mysql.connection.cursor()
+    cur.execute("select MreviewTable.review_id,MovieTable.movie_name,accountTable.first_name, movie_review,accountTable.last_name from MovieTable,MreviewTable,accountTable where user_id_1=user_id and movie_id_1=movie_id and user_id = %s",[user_id_1])
+    MrevTable = cur.fetchall()
+    cur.execute("select GreviewTable.review_id,GameTable.game_name,accountTable.first_name, game_review,accountTable.last_name from GameTable,GreviewTable,accountTable where user_id_1=user_id and game_id_1=game_id and user_id = %s",[user_id_1])
+    GrevTable = cur.fetchall()
+    cur.close()
+    session['MrevTable'] = MrevTable
+    session['GrevTable'] = GrevTable
+    return redirect(url_for('about',MrevTable=MrevTable, GrevTable=GrevTable))
+
+
 
 
 
