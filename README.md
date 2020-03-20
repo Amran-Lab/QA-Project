@@ -69,18 +69,18 @@ I have created 4 tables excluding the user table. The four tables are paired up 
 ### Trello and Planning
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello1.PNG?raw=true)
-\
-\
-\
-\
-\
+
+
+
+
 <a name="TAP2"></a>
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello2.PNG?raw=true)
 
-\
 
-For my planning I used Trello. I have moved over tasks when completed to done or when something is ongoing such as the readme it is in the doing now tab.
+
+For my planning I used Trello. I have moved over tasks when completed to done or when something is ongoing such as the readme it is in the doing tab. I also have a tab of
+for the user stories and requirements, to make sure I am meeting them.
 
 
 
@@ -89,9 +89,9 @@ For my planning I used Trello. I have moved over tasks when completed to done or
 
 ### Deployment
 
-\
 
-\
+
+
 
 <a name="Retrospective"></a>
 
