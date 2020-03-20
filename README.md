@@ -1,6 +1,5 @@
 # QA-Project
-# SFIA Project
-## Movie and Game Reviw
+## Index
 
 [Brief](#brief)
    * [My Solution](#mysolution)
@@ -22,10 +21,19 @@
 
 <a name="brief"></a>
 
+### Brief
+
+The Brief was to create a CRUD (Create, Read, Update, Delete) functioning website made by flask and deployed by Jenkins. The website must also have a minimum of two tables in a relational databases.
+
+I decided to create a website where users can post movie and game reviews. This would be the create part of CRUD. For the read functionality I would let users be able to see reviews of their own and other people's reviews. Update would work by editing a review that already exists and delete will be able to delete both records and users.
+
 <a name="erdanddiagrams"></a>
+
+### ERD
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/SFIA-Entity%20Relation%20Diagram.png?raw=true)
 
+I have created 4 tables excluding the user table. The four tables are paired up with one of each pair being connected to the accounts table, meeting the requirements for the relational database.
 
 
 
@@ -64,17 +72,21 @@
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Trello2.PNG?raw=true)
 
 \
-\
-\
-\
+
+For my planning I used Trello. I have moved over tasks when completed to done or when something is ongoing such as the readme it is in the doing now tab.
+
 \
 <a name="Deploy"></a>
 <a name="Pipeline"></a>
 \
-\
+
 \
 
 \
 
 \
 <a name="Retrospective"></a>
+
+I have created a flask application and deployed it onto a virtual machine with jenkins,
+using Agile methodology. The application can connect to a gcp database and read write to it.
+If I was to have more time or do it again I would allow functionality to users to be able to log in with a password, for a layer of authentication and security.
