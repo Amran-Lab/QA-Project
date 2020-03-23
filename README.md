@@ -12,11 +12,11 @@
   * [Trello Before](#Tap1)
   * [Trello After](#Tap2)
 
-[Testing](#Testing)
-
 [Deployment](#Deploy)
   * [Pipline](#Pipeline)
-   
+
+[Testing](#Testing)
+
 [Retrospective](#Retro)  
 
 <a name="brief"></a>
@@ -89,9 +89,15 @@ for the user stories and requirements, to make sure I am meeting the requirement
 
 ### Deployment
 
-![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Pipline.PNG?raw=true)
+![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Pipline1.PNG?raw=true)
 
+<a name="Testing"></a>
 
+### Testing
+
+![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/tests.png?raw=true)
+
+![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/cov.png?raw=true)
 
 <a name="Retrospective"></a>
 
