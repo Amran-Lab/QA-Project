@@ -9,5 +9,5 @@ sudo systemctl start flask.service
 sleep 10
 
 source  ~/.bashrc
-/var/lib/jenkins/workspace/pipeline1/venv/bin/coverage run -m pytest /var/lib/jenkins/workspace/pipeline1/testing.py
-/var/lib/jenkins/workspace/pipeline1/venv/bin/coverage report
+/var/jenkins_home/workspace/pipelinedockervenv/bin/coverage run -m pytest /var/jenkins_home/workspace/pipelinedocker/testing.py
+/var/jenkins_home/workspace/pipelinedocker/venv/bin/coverage report

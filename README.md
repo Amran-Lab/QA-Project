@@ -91,6 +91,8 @@ for the user stories and requirements, to make sure I am meeting the requirement
 
 ![GitHub Logo](https://github.com/Amran-Lab/QA-SFIA/blob/master/Pipline1.PNG?raw=true)
 
+Program will be coded in vscode using python-flask and version controlled on GitHub. When changes are made a trigger will cause Jenkins to build the program with the latest version. This will be ran on a GCP Virtual Machine which will be connected to a GCP MYSQL database.
+
 <a name="Testing"></a>
 
 ### Testing
