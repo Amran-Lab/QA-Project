@@ -3,7 +3,7 @@ Description=My Flask App
 [Service]
 User=jenkins
 
-ExecStart=/var/jenkins_home/workspace/pipelinedocker/script/installation.sh
+ExecStart= /bin/sh /var/jenkins_home/workspace/pipelinedocker/script/installation.sh
 
 [Install]
 WantedBy=multi-user.target
