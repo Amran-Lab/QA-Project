@@ -26,7 +26,7 @@ def test_login():
     assert 404 == r.status
 
 def test_insert_db():
-    with app.app_context():
+    with app.app_context():                                                      #need context for it to work
         cur = mysql.connection.cursor()
         cur.execute("Select * from MreviewTable")                                  #this and next command will get records before update
         records_before = cur.fetchall()

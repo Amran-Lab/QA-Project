@@ -73,7 +73,7 @@ def add_game_record():
     cur = mysql.connection.cursor()
     cur.execute("select * from GreviewTable where user_id_1=%s and game_id_1=%s",(user_id_1, gameid))
     records = cur.fetchall()
-    if len(records)>0:
+    if len(records)>0:                                         #checks if record already exists
         cur.execute("UPDATE GreviewTable SET game_review= %s where user_id_1=%s and game_id_1=%s;",(game_review, user_id_1, gameid ))
             
     else:        
