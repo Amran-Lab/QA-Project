@@ -108,3 +108,22 @@ Program will be coded in vscode using python-flask and version controlled on Git
 I have created a flask application and deployed it onto a virtual machine with jenkins,
 using Agile methodology. The application can connect to a gcp database and read write to it.
 If I was to have more time or do it again I would allow functionality to users to be able to log in with a password, for a layer of authentication and security.
+
+What Went Well
+4 tables excluding the user table with two pairs of relation​
+
+Good use of Jenkins, making it build on new GitHub version of the app​
+
+Good Time Management​
+
+Easy to use graphical interface
+
+What could be better
+
+A login feature​
+
+Selenium Testing​
+
+Add more games and movies for user to review​
+
+Write code in a way that is more easier to test
